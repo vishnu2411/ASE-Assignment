@@ -17,13 +17,13 @@
             const str = document.getElementById('input-array').value;
             const splitvalues = str.split(',')
 
-            const array = [];
+            //const array = [];
 
             for(let i = 0; i < splitvalues.length; i++){
                 array.push(parseInt(splitvalues[i]));
             }
 
-            console.log(array);
+            //console.log(array);
 
             const sortedArray = array.sort((a,b) => b-a);
             console.log(sortedArray);
