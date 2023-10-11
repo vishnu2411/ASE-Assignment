@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversing every word in a string</title>
+</head>
+<body>
+    <h3>Ennter a String</h3>
+    <input id="input-string"></input>
+    <button onclick="reverseString()">Reverse</button>
+    <h3>Reversed String</h3>
+    <textarea id="output"></textarea>
+
+    <script>
+        function reverseString(){
+            const str = document.getElementById('input-string').value;
+            //console.log(str)
+            
+            const reversedString = str.split(' ').map(word => word.split('').reverse().join('')).join(' ');
+            //console.log(reversedString)
+            document.getElementById('output').innerHTML = reversedString;
+        }
+    </script>
+</body>
+</html>
